@@ -480,6 +480,34 @@
             margin-top: 0.5rem;
         }
 
+        /*===== RECOGNITIONS =====*/
+        .recognition__item {
+            background: rgba(139, 158, 255, 0.1);
+            border: 1px solid rgba(139, 158, 255, 0.2);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s;
+        }
+
+        .recognition__item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0px 5px 20px rgba(139, 158, 255, 0.3);
+            background: rgba(139, 158, 255, 0.15);
+        }
+
+        .recognition__title {
+            color: var(--first-color);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .recognition__description {
+            color: #d0d0d0;
+            line-height: 1.6;
+        }
+
         /*===== CONTACT =====*/
         .contact__input {
             width: 100%;
@@ -838,5 +866,49 @@ Feel free to contact me if you think we’d click or just want to connect!</p>
                     </ul>
                 </div>
 
-                <div class="project__item">
-                    <h3 class="project__title">Elasticsearch Configuration Service</h
+            </div>
+        </section>
+
+        <!--===== EDUCATION =====-->
+        <section class="section" id="education">
+            <h2 class="section-title">Education</h2>
+            <div class="bd-grid">
+                <div class="education__item">
+                    <h3 class="education__degree">Master of Science in Computer Science</h3>
+                    <p class="education__university">University of Colorado Boulder</p>
+                    <p class="education__date">Aug 2025 – May 2027</p>
+                    <p class="education__gpa">GPA: 3.85/4.0</p>
+
+                    <h3 class="education__degree">Bachelor of Engineering in Electronics and Communication</h3>
+                    <p class="education__university">Birla Institute of Technology and Science, Pilani</p>
+                    <p class="education__date">Aug 2019 – July 2023</p>
+                    <p class="education__gpa">GPA: 3.25/4.0</p>
+                    <p class="education__courses"><strong>Relevant Coursework:</strong> Data Structures & Algorithms, Object-Oriented Programming, Operating Systems, Distributed Systems, Communication Networks, Linear Algebra, Natural Language Processing, Neural Networks, Algorithmic Human-Robot Interaction</p>
+                </div>
+            </div>
+        </section>
+
+        <!--===== RECOGNITIONS & ACHIEVEMENTS =====-->
+        <section class="section" id="recognitions">
+            <h2 class="section-title">Recognitions & Achievements</h2>
+            <div class="bd-grid">
+                <div class="recognition__item">
+                    <h3 class="recognition__title">IIT JEE Advanced</h3>
+                    <p class="recognition__description">Achieved 99.2 percentile rank among 1 million+ candidates nationwide, demonstrating exceptional problem-solving and analytical capabilities.</p>
+                </div>
+
+                <div class="recognition__item">
+                    <h3 class="recognition__title">Publicis Sapient Learning Mindset Award</h3>
+                    <p class="recognition__description">Recognized for exceptional adaptability and continuous learning while architecting scalable enterprise AI solutions on AWS and Azure, mentoring junior engineers on Kubernetes optimization and DevOps best practices.</p>
+                </div>
+
+                <div class="recognition__item">
+                    <h3 class="recognition__title">Merit Scholarship, Sri Chaitanya Educational Institutions</h3>
+                    <p class="recognition__description">Awarded full tuition scholarship for Grades 11-12 based on outstanding performance in national-level competitive exams.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
