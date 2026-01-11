@@ -515,6 +515,166 @@
         }
 
         /*===== CONTACT =====*/
+        .contact__container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact__info {
+            background: rgba(139, 158, 255, 0.05);
+            border: 2px solid var(--first-color);
+            border-radius: 1rem;
+            padding: 2rem;
+        }
+
+        .contact__info-title {
+            font-size: 1.8rem;
+            color: #fff;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .contact__info-text {
+            color: #b0b0b0;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .contact__details {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact__detail {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .contact__icon {
+            width: 45px;
+            height: 45px;
+            background: var(--first-color);
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #fff;
+            flex-shrink: 0;
+        }
+
+        .contact__detail-text {
+            color: #e0e0e0;
+            font-size: 1rem;
+        }
+
+        .contact__social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .contact__social-link {
+            width: 45px;
+            height: 45px;
+            background: var(--first-color);
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #fff;
+            transition: all 0.3s;
+        }
+
+        .contact__social-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(139, 158, 255, 0.4);
+        }
+
+        .contact__form-container {
+            background: rgba(139, 158, 255, 0.05);
+            border: 2px solid var(--first-color);
+            border-radius: 1rem;
+            padding: 2rem;
+        }
+
+        .contact__form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact__form-label {
+            display: block;
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+        }
+
+        .contact__input {
+            width: 100%;
+            font-size: var(--normal-font-size);
+            font-weight: var(--font-semi);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            border: 2px solid var(--first-color);
+            outline: none;
+            background: rgba(0, 0, 0, 0.3);
+            color: #e0e0e0;
+            font-family: var(--body-font);
+            transition: all 0.3s;
+        }
+
+        .contact__input:focus {
+            background: rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 10px rgba(139, 158, 255, 0.3);
+        }
+
+        .contact__input::placeholder {
+            color: #888;
+        }
+
+        .contact__textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .contact__button {
+            width: 100%;
+            display: block;
+            border: none;
+            outline: none;
+            font-size: var(--normal-font-size);
+            cursor: pointer;
+            background-color: var(--first-color);
+            color: #fff;
+            padding: 1rem 2.5rem;
+            font-weight: var(--font-semi);
+            border-radius: 0.5rem;
+            transition: 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact__button:hover {
+            box-shadow: 0px 10px 36px rgba(139, 158, 255, 0.4);
+            transform: translateY(-2px);
+        }
+
+        @media screen and (min-width: 768px) {
+            .contact__container {
+                grid-template-columns: 1fr 1.5fr;
+            }
+        }
+
+        /*===== FOOTER =====*/
         .contact__input {
             width: 100%;
             font-size: var(--normal-font-size);
@@ -903,6 +1063,70 @@ Feel free to contact me if you think we’d click or just want to connect!</p>
                 <div class="recognition__item">
                     <h3 class="recognition__title">Merit Scholarship, Sri Chaitanya Educational Institutions</h3>
                     <p class="recognition__description">Awarded full tuition scholarship for Grades 11-12 based on outstanding performance in national-level competitive exams.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="section" id="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact__container bd-grid">
+                <!-- Get in Touch Section -->
+                <div class="contact__info">
+                    <h3 class="contact__info-title">GET IN TOUCH</h3>
+                    <p class="contact__info-text">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    
+                    <div class="contact__details">
+                        <div class="contact__detail">
+                            <div class="contact__icon">
+                                <i class='bx bx-envelope'></i>
+                            </div>
+                            <span class="contact__detail-text">pradeep.alapati8055@gmail.com</span>
+                        </div>
+                        
+                        <div class="contact__detail">
+                            <div class="contact__icon">
+                                <i class='bx bx-map'></i>
+                            </div>
+                            <span class="contact__detail-text">Boulder, CO</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__social-links">
+                        <a href="https://github.com/pradeep80555" target="_blank" class="contact__social-link">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/pradeep-alapati/" target="_blank" class="contact__social-link">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact__form-container">
+                    <form action="" class="contact__form">
+                        <div class="contact__form-group">
+                            <label class="contact__form-label">Your Name</label>
+                            <input type="text" placeholder="Tony Stark" class="contact__input" required>
+                        </div>
+                        
+                        <div class="contact__form-group">
+                            <label class="contact__form-label">Your Email</label>
+                            <input type="email" placeholder="tony@example.com" class="contact__input" required>
+                        </div>
+                        
+                        <div class="contact__form-group">
+                            <label class="contact__form-label">Subject</label>
+                            <input type="text" placeholder="Let's catch up !" class="contact__input" required>
+                        </div>
+                        
+                        <div class="contact__form-group">
+                            <label class="contact__form-label">Message</label>
+                            <textarea placeholder="Your message here..." class="contact__input contact__textarea" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="contact__button button">Send Message</button>
+                    </form>
                 </div>
             </div>
         </section>
