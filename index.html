@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    <title>Mohit Krishna Arumalla - Software Engineer</title>
+    <title>Pradeep Alapati - Portfolio</title>
     <style>
         /*===== GOOGLE FONTS =====*/
         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
@@ -261,6 +261,24 @@
         .button:hover {
             box-shadow: 0px 10px 36px rgba(139, 158, 255, 0.4);
             transform: translateY(-2px);
+        }
+
+        .button-secondary {
+            background-color: transparent;
+            border: 2px solid var(--first-color);
+            color: var(--first-color);
+        }
+
+        .button-secondary:hover {
+            background-color: var(--first-color);
+            color: #fff;
+        }
+
+        .home__buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
         }
 
         /*===== ABOUT =====*/
@@ -876,7 +894,12 @@
         <section class="home bd-grid" id="home">
             <div class="home__data">
                 <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Pradeep Alapati .</span><br>A Software Engineer<br> and more ...</h1>
-                <a href="#contact" class="button">Contact Me</a>
+                <div class="home__buttons">
+                    <a href="#contact" class="button">Contact Me</a>
+                    <a href="assets/resume/Pradeep_Alapati_Resume.pdf" download class="button button-secondary">
+                        <i class='bx bx-download'></i> Download Resume
+                    </a>
+                </div>
             </div>
 
             <div class="home__social">
